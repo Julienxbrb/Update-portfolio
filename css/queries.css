@@ -1,0 +1,134 @@
+/* rem and em do NOT depend on html font-size in media queries!
+Instead, 1rem = 1em = 16px */
+
+/**********************/
+/* BELOW 1344px (smaller desktops) */
+/**********************/
+@media (max-width: 84em) {
+  html {
+    font-size: 55%;
+  }
+
+  .header h1 p {
+    margin-top: 5rem;
+  }
+  .bloc-1 {
+    margin-top: 20rem;
+  }
+}
+
+/**********************/
+/* BELOW 1200px (Landscape Tablets) */
+/**********************/
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+  .header h1 p {
+    margin-top: 5rem;
+  }
+  .bloc-1 {
+    margin-top: 20rem;
+  }
+}
+
+/**********************/
+/* BELOW 944px (Tablets) */
+/**********************/
+@media (max-width: 59em) {
+  html {
+    font-size: 40%;
+  }
+
+  .projects-container img {
+    width: 80%;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    box-shadow: 0 12px 24px rgb(0, 0, 0, 0.05);
+  }
+
+  .img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+/**********************/
+/* BELOW 832px (Smaller tablets) */
+/**********************/
+@media (max-width: 52em) {
+  html {
+    font-size: 38%;
+  }
+
+  .header {
+    padding: 0 5rem;
+  }
+
+  #about {
+    padding: 0 5rem;
+  }
+
+  .education {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 10rem;
+  }
+  .edu-box {
+    margin-bottom: 0;
+  }
+
+  .skills-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
+}
+
+/**********************/
+/* BELOW 672px (Smaller tablets) */
+/**********************/
+@media (max-width: 42em) {
+  .container-call {
+    width: 40rem;
+    height: 30rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 10rem 3rem 3rem;
+  }
+
+  .contact-details {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .box-img {
+    width: 15rem;
+    height: 15rem;
+    background-color: #ea8685;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-20%, 80%);
+  }
+
+  footer {
+    padding: 0 2rem;
+  }
+}
